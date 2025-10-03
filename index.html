@@ -210,13 +210,25 @@
     }
     /* Footer */
     footer {
-      background-color: #007acc;
-      color: white;
-      text-align: center;
-      padding: 1rem 1rem;
-      font-size: 0.9rem;
-      margin-top: auto;
-    }
+  background-color: #007acc;
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+footer a {
+  color: #cce4ff; /* Light blue for good contrast */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #ffffff; /* Pure white on hover/focus */
+  text-decoration: underline;
+}
     /* Responsive */
     @media (max-width: 600px) {
       header h1 {
