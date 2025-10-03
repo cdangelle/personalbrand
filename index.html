@@ -489,5 +489,18 @@
     });
   })();
   </script>
+  <script>
+  window.addEventListener('load', () => {
+    // Blur focused input/textarea if any to prevent scroll jumping
+    const active = document.activeElement;
+    if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA')) {
+      active.blur();
+    }
+    // Scroll to top after a small timeout to override browser scroll
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 50);
+  });
+</script>
 </body>
 </html>
